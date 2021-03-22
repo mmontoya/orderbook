@@ -1,0 +1,25 @@
+{
+  "orderbook": {
+    "bids": [
+      { "price": 1000, "amount": 2 },
+      { "price": 1025, "amount": 2.1 },
+      { "price": 1037, "amount": 0.5 },
+      { "price": 1048, "amount": 3 },
+      { "price": 1050, "amount": 4.1 },
+      { "price": 1063, "amount": 3 },
+      { "price": 1088, "amount": 2.3 },
+      { "price": 1090, "amount": 2 },
+      { "price": 1091, "amount": 1.5 }
+    ],
+    "asks" : [
+      { "price": 2050, "amount": 1.6 },
+      { "price": 2100, "amount" : 3.4 },
+      { "price": 3050, "amount": 4.5 },
+      { "price": 3060, "amount": 2.3 },
+      { "price": 3080, "amount": 0.6 },
+      { "price": 3080, "amount": 0.4 },
+      { "price": 3093, "amount": 1.3 },
+      { "price": 3096, "amount": 1.6 }
+    ]
+  }
+}

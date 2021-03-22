@@ -1,13 +1,148 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+table {
+	font-family: Lato, Arial, Helvetica, sans-serif;
+	text-align: left;
+	width: 500px;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	border-spacing: 0;
+	font-size: 14px;
+	position: absolute;
+	/* top: 20px; */
+	/* left: 20px; */
+}
+
+html,
+body {
+	height: 100%;
+	margin: 20px;
+}
+
+/**
+      This is the table headers, aka the first row in our table 
+      change to "table tr:first-child tr" if you don't have table headers
+    */
+tr:first-child th {
+	background: #ffffff;
+	background: -moz-linear-gradient(
+		top,
+		#ffffff 0%,
+		#f6f6f6 30%,
+		#f6f6f6 30%,
+		#e5e5e5 100%
+	);
+	background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0%, #ffffff),
+		color-stop(30%, #f6f6f6),
+		color-stop(30%, #f6f6f6),
+		color-stop(100%, #e5e5e5)
+	);
+	background: -webkit-linear-gradient(
+		top,
+		#ffffff 0%,
+		#f6f6f6 30%,
+		#f6f6f6 30%,
+		#e5e5e5 100%
+	);
+	background: -o-linear-gradient(
+		top,
+		#ffffff 0%,
+		#f6f6f6 30%,
+		#f6f6f6 30%,
+		#e5e5e5 100%
+	);
+	background: -ms-linear-gradient(
+		top,
+		#ffffff 0%,
+		#f6f6f6 30%,
+		#f6f6f6 30%,
+		#e5e5e5 100%
+	);
+	background: linear-gradient(
+		to bottom,
+		#ffffff 0%,
+		#f6f6f6 30%,
+		#f6f6f6 30%,
+		#e5e5e5 100%
+	);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 );
+
+	padding: 8px 10px;
+	color: #000;
+	border-top: 1px solid #cecece;
+	border-bottom: 1px solid #e6e6e6;
+}
+/* every cell in the table */
+tr td {
+	background-color: #f2f2f2;
+	padding: 8px 12px;
+}
+/* adds a border and a border radius to the top far left cells */
+tr:first-child th:first-child {
+	border-left: 1px solid #cecece;
+	border-top-left-radius: 5px;
+}
+
+/* adds a border and a border radius to the top far right cells */
+tr:first-child th:last-child {
+	border-right: 1px solid #cecece;
+	border-top-right-radius: 5px;
+}
+/* adds a left border to all the far left cells*/
+tr td:first-child {
+	border-left: 1px solid #cecece;
+}
+/* adds a right border to all the far right cells */
+tr td:last-child {
+	border-right: 1px solid #cecece;
+}
+/* Add bottom border to all the cells at the last row */
+tr:last-child td {
+	border-bottom: 1px solid #cecece;
+}
+/* adds color to odd rows*/
+tr:nth-child(odd) td {
+	background-color: #fff;
+}
+/* adds color to even rows*/
+tr:nth-child(even) td {
+	background-color: #f5fafc;
+}
+
+/* adds a border radius to the bottom left cell */
+tr:last-child td:first-child {
+	border-bottom-left-radius: 5px;
+}
+/* adds a border radius to the bottom right cell */
+tr:last-child td:last-child {
+	border-bottom-right-radius: 5px;
+}
+
+.ticker {
+	display: flex;
+	justify-content: center;
+	font-size: 20px;
+	font-style: bold;
+	height: 100%;
+}
+
+.ticker > div {
+	align-items: center;
 }
